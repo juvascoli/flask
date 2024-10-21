@@ -11,4 +11,9 @@ def home():
 def create_user():
     data = request.get_json()
     #creating an user with received data
+    print(data)
     return{"message": "user created"}
+
+
+if __name__ == '__main__':
+    app.run(debug='True')
